@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* CHANGE */
+  background: linear-gradient(135deg, #0890d0, #102030);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+/* .animeimg {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  transform-style: preserve-3d;
+  transform: perspective(2500px) rotateY(0deg);
+  transition: transform 1.7s;
+}
+
+.animeimg span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: rotateY(calc(var(--a) * 45deg)) translateZ(750px);
+} */
+
+/* test */
+.anime-container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  transform-style: preserve-3d;
+  transform: perspective(2500px) rotateY(0deg);
+  transition: transform 1.7s;
+}
+.anime-container span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: rotateY(calc(var(--a) * 45deg)) translateZ(750px);
+}
+
+.btnscarousel {
+  position: relative;
+  width: 80%;
+}
+
+.btn {
+  position: absolute;
+  background-color: #0890d0;
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.btn:hover {
+  filter: brightness(1.5);
+}
+#prev {
+  left: 10%;
+}
+#next {
+  right: 10%;
+}
