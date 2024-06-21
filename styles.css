@@ -16,6 +16,16 @@ body {
   height: 100vh;
 }
 
+h1 {
+  font-size: 60px;
+  color: white;
+  font-weight: bolder;
+}
+
+h2 {
+  color: white;
+  font-weight: bolder;
+}
 /* .animeimg {
   position: relative;
   width: 500px;
@@ -33,7 +43,7 @@ body {
   transform: rotateY(calc(var(--a) * 45deg)) translateZ(750px);
 } */
 
-/* test */
+
 .anime-container {
   position: relative;
   width: 500px;
@@ -60,7 +70,7 @@ body {
   background-color: #0890d0;
   color: white;
   border: none;
-  padding: 20px 40px;
+  padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   font-size: x-large;
@@ -68,11 +78,50 @@ body {
 }
 
 .btn:hover {
-  filter: brightness(1.5);
+  filter: brightness(1.2);
 }
 #prev {
   left: 10%;
 }
 #next {
   right: 10%;
+}
+
+img:hover {
+  filter: brightness(1.1);
+}
+
+.submit-button {
+  background-color: #0890d0;
+  color: white;
+  border: none;
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.submit-button:hover {
+  filter: brightness(1.2);
+}
+
+.review-text {
+  margin: 5px;
+  width: 60%;
+  height: 60px;
+  border-radius: 5px;
+  border-color: #102030;
+  border-width: 2px;
+}
+
+.starLabel {
+  color: white;
+  font-size: 24px;
+}
+
+.starLabel-Clicked {
+  color: orange;
+  font-size: 24px;
 }
