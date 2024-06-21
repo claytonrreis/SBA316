@@ -46,19 +46,19 @@ function createStarRating() {
       const rating = this.value;
       const starLabel = document.getElementById(`star-label-${rating}`);
 
-      if (rating === "1") {
-        starLabel.style.color = "yellow";
-      } else if (rating === "2") {
-        starLabel.style.color = "orange";
-      } else if (rating === "3") {
-        starLabel.color = "lightgoldenrodyellow";
-      } else if (rating === "4") {
-        starLabel.style.color = "gold";
-      } else if (rating === "5") {
-        starLabel.style.color = "#ffd700";
-      } else {
-        starLabel.style.color = "black";
-      }
+      // if (rating === "1") {
+      //   starLabel.style.color = "yellow";
+      // } else if (rating === "2") {
+      //   starLabel.style.color = "orange";
+      // } else if (rating === "3") {
+      //   starLabel.color = "lightgoldenrodyellow";
+      // } else if (rating === "4") {
+      //   starLabel.style.color = "gold";
+      // } else if (rating === "5") {
+      //   starLabel.style.color = "#ffd700";
+      // } else {
+      //   starLabel.style.color = "black";
+      // }
     });
 
     ratingContainer.appendChild(starRadio);
@@ -70,7 +70,7 @@ function createStarRating() {
 
       for (const label of starLabels) {
         const labelId = parseInt(label.id.split("-")[2]);
-        label.style.color = labelId <= selectedStar ? "gold" : "black";
+        label.style.color = labelId <= selectedStar ? "gold" : "grey";
       }
     });
   }
