@@ -45,20 +45,6 @@ function createStarRating() {
     starRadio.addEventListener("change", function () {
       const rating = this.value;
       const starLabel = document.getElementById(`star-label-${rating}`);
-
-      // if (rating === "1") {
-      //   starLabel.style.color = "yellow";
-      // } else if (rating === "2") {
-      //   starLabel.style.color = "orange";
-      // } else if (rating === "3") {
-      //   starLabel.color = "lightgoldenrodyellow";
-      // } else if (rating === "4") {
-      //   starLabel.style.color = "gold";
-      // } else if (rating === "5") {
-      //   starLabel.style.color = "#ffd700";
-      // } else {
-      //   starLabel.style.color = "black";
-      // }
     });
 
     ratingContainer.appendChild(starRadio);
@@ -98,27 +84,6 @@ function createReviewSection(itemId) {
   reviewSection.appendChild(ratingElement);
   reviewSection.appendChild(submitButton);
 
-  // submitButton.addEventListener("click", function () {
-  //   reviewText.value = "";
-  // });
-
-  // // Add validation logic for review text
-  // submitButton.addEventListener("click", function (event) {
-  //   const reviewText = document.getElementById(`review-text-${itemId}`);
-  //   const reviewTextValue = reviewText.value.trim(); // Trim whitespace
-
-  //   if (reviewTextValue === "") {
-  //     event.preventDefault();
-  //     alert(
-  //       "Please write a review before submitting! (Minimum length: 10 characters)"
-  //     );
-  //   } else {
-  //     // Submit review logic (if implemented)
-  //     // ... your code to send review data ...
-  //   }
-  // });
-
-  // Add validation logic for review text and star rating
   submitButton.addEventListener("click", function (event) {
     const reviewText = document.getElementById(`review-text-${itemId}`);
     const reviewTextValue = reviewText.value.trim();
@@ -147,15 +112,6 @@ function createReviewSection(itemId) {
     }
   });
   return reviewSection;
-
-  // function validateReviewSection() {
-  //   if (reviewText === "") {
-  //     alert("The review text us required for submition!");
-  //     return false;
-  //   } else {
-  //     return true;
-  //   }
-  // }
 }
 
 const animeItems = document.querySelectorAll(".anime-item");
